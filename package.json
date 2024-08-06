@@ -1,5 +1,5 @@
 {
-  "name": "react-native-maps-directions",
+  "name": "@jmstechnologiesinc/react-native-maps-directions",
   "version": "1.9.0",
   "description": "Directions Component for react-native-maps",
   "main": "index.js",
@@ -12,7 +12,10 @@
     "email": "bramus@bram.us",
     "url": "https://www.bram.us/"
   },
-  "repository": "https://github.com/bramus/react-native-maps-directions",
+  "repository": "https://github.com/jmstechnologiesinc/react-native-maps-directions.git",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "keywords": [
     "react-native",
     "react-native-component",
