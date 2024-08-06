@@ -1,4 +1,4 @@
-declare module "react-native-maps-directions" {
+declare module "@jmstechnologiesinc/react-native-maps-directions" {
   // Type definitions for react-native-maps-directions 1.6
   // Project: https://github.com/bramus/react-native-maps-directions
   // Definitions by: Ali Oguzhan Yildiz <https://github.com/alioguzhan>
@@ -8,69 +8,70 @@ declare module "react-native-maps-directions" {
 
   import * as React from "react";
 
-  export type MapDirectionsLegs =[
+  export type MapDirectionsLegs = [
     {
       distance: {
-        text: string,
-        value: number
-      },
+        text: string;
+        value: number;
+      };
       duration: {
-        text: string,
-        value: number
-      },
-      end_address: string,
+        text: string;
+        value: number;
+      };
+      end_address: string;
       end_location: {
-        lat: number,
-        lng: number
-      },
-      start_address: string,
+        lat: number;
+        lng: number;
+      };
+      start_address: string;
       start_location: {
-        lat: number,
-        lng: number
-      },
-      steps: [{
-        distance: {
-          text: string,
-          value: number
-        },
-        duration: {
-          text: string,
-          value: number
-        },
-        end_location: {
-          lat: number,
-          lng: number
-        },
-        start_location: {
-          lat: number,
-          lng: number
-        },
-        html_instructions: string,
-        polyline: {
-          points: string
-        },
-        travel_mode: string,
-        maneuver: string | undefined
-      }],
-      traffic_speed_entry: [],
-      via_waypoint: [],
-    }]
+        lat: number;
+        lng: number;
+      };
+      steps: [
+        {
+          distance: {
+            text: string;
+            value: number;
+          };
+          duration: {
+            text: string;
+            value: number;
+          };
+          end_location: {
+            lat: number;
+            lng: number;
+          };
+          start_location: {
+            lat: number;
+            lng: number;
+          };
+          html_instructions: string;
+          polyline: {
+            points: string;
+          };
+          travel_mode: string;
+          maneuver: string | undefined;
+        }
+      ];
+      traffic_speed_entry: [];
+      via_waypoint: [];
+    }
+  ];
 
   export type MapDirectionsResponse = {
     coordinates: [
       {
-        latitude: number,
-        longitude: number
-      }],
-    distance: number,
-    duration: number,
-    fares: [],
-    legs: MapDirectionsLegs,
-    waypointOrder: [[number]]
-  }
-
-
-
+        latitude: number;
+        longitude: number;
+      }
+    ];
+    distance: number;
+    duration: number;
+    fares: [];
+    legs: MapDirectionsLegs;
+    waypointOrder: [[number]];
+  };
 
   export type MapViewDirectionsOrigin =
     | string
@@ -99,13 +100,9 @@ declare module "react-native-maps-directions" {
     | "TRANSIT"
     | "WALKING";
 
-  export type MapViewDirectionsPrecision =
-    | "high"
-    | "low";
+  export type MapViewDirectionsPrecision = "high" | "low";
 
-  export type MapViewDirectionsTimePrecision =
-      | "now"
-      | "none";
+  export type MapViewDirectionsTimePrecision = "now" | "none";
 
   export interface MapViewDirectionsProps {
     /**
